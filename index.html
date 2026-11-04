@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advance Happiest Birthday My Dear Gowsi  ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #190020, #510044, #18002c);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 38px;
+    color: #ffb6d9;
+    text-shadow: 0 0 20px #ff1493;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 42px;
+    color: #ffd700;
+    margin: 20px;
+}
+
+.cake {
+    font-size: 100px;
+    margin: 25px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    50% { transform: translateY(-15px); }
+}
+
+.message {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #ffe4f1;
+}
+
+button {
+    padding: 15px 30px;
+    background: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 0 20px #ff1493;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+#surprise {
+    display: none;
+    font-size: 23px;
+    color: #ffd700;
+    margin: 25px auto;
+    line-height: 1.8;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 25px;
+    animation: float 6s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+footer {
+    margin-top: 40px;
+    color: pink;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎉Advance Happiest Birthday 🎉</h1>
+
+<div class="name">My Dear Gowsalya ❤️</div>
+
+<div class="cake">🎂</div>
+
+<h2>That day is Your Special Day! 🌹</h2>
+
+<p class="message">
+    ❤️✨ Happy Advance Birthday, My Love! 🥹💗
+
+Un birthday vara innum konjam days irundhaalum, unakku wish panna en manasu ippove thudikkuthu. ❤️
+
+Nee en life-la vandhathula irundhu, enakku happiness, love, care nu ellame special-ah maariduchu. 🫶
+
+Un smile eppovume ippadiye irukkanum. Un dreams ellame nijamaaganum. Un life full-ah happiness, success and peace irukkanum. 💕
+
+Namma life-la evlo problems vandhaalum, namma bond eppovume strong-ah irukkanum.
+
+You are not just a part of my life, you are one of the most beautiful reasons behind my happiness. 🥹❤️
+
+Once again, Happy Advance Birthday, My Everything! 🎂💗
+
+Love you so much! ❤️♾️
+
+You are one of the most special people in my life.
+Your happiness means a lot to me.
+May your life always be filled with love,
+happiness, success and beautiful memories.
+</p>
+
+<button onclick="showSurprise()">
+Open Your Surprise 🎁
+</button>
+
+<div id="surprise">
+❤️ Advance Happy Birthday Gowsalya! ❤️
+<br><br>
+You make every moment special.
+I wish you endless happiness and a beautiful future.
+<br><br>
+With lots of love,<br>
+<strong>From Mufin 💕</strong>
+</div>
+
+<footer>
+Made with ❤️ Just For You
+</footer>
+
+</div>
+
+<script>
+
+function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+
+    for(let i = 0; i < 40; i++) {
+        createHeart();
+    }
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+    heart.innerHTML = ["❤️","💕","💖","🌹","✨"][
+        Math.floor(Math.random() * 5)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (3 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 7000);
+}
+
+setInterval(createHeart, 500);
+
+</script>
+
+</body>
+</html>
+
